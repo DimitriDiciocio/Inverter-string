@@ -1,0 +1,22 @@
+
+<!DOCTYPE html> <!-- Declaração do tipo de documento -->
+<html lang="en"> <!-- Declaração do idioma da página (inglês) -->
+<head>
+    <meta charset="UTF-8"> <!-- Declaração da codificação de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Declaração da viewport para dispositivos móveis -->
+    <title>Inverter String</title> <!-- Título da página exibido na aba do navegador -->
+</head>
+<body style="color:red; font-size:35px; margin: 0; background-color: gray">
+    <h1 style="background-color:black;padding: 1em; margin: 0; text-align:center;">Invertendo STRING</h1> <!-- Título principal da página -->
+    <form action="/resultado" method="post" style="background-color:black; padding:1em; display:flex ;justify-content: center"> <!-- Formulário para enviar o número para verificação -->
+        <label for="string">Digite uma string:</label> <!-- Rótulo do campo de entrada -->
+        <input type="text" id="string" name="string" required> <!-- Campo de entrada para o número -->
+        <button type="submit">Inverter</button> <!-- Botão de envio do formulário -->
+    </form>
+    <div id="resultado" style="background-color:black; color: white; padding: 0.2em; text-align: center;">
+        {% if resultado %}
+            {{ resultado }}
+        {% endif %}
+    </div>
+</body>
+</html>
